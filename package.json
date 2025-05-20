@@ -1,0 +1,25 @@
+{
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "name": "memo-mates",
+  "version": "1.0.0",
+  "description": "This project is a spontaneous idea to keep me and my wife on track and code together while building an app.",
+  "main": "index.js",
+ "scripts": {
+  "start:dev": "concurrently \"npm run serve:api\" \"npm run serve:web\"",
+  "serve:api": "ts-node-dev --respawn --transpile-only src/server/index.ts",
+  "serve:web": "npm --prefix web start"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anthony1acosta/Memo-Mates.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anthony1acosta/Memo-Mates/issues"
+  },
+  "homepage": "https://github.com/Anthony1acosta/Memo-Mates#readme"
+}
